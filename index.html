@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<title>3D圆环计时器</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="x5-orientation" content="portrait">
+<meta name="x5-fullscreen" content="true">
+<meta name="screen-orientation" content="portrait">
+<meta name="full-screen" content="yes">
+
+<body>
+
+	<header id="header">
+		<h1 id="logo"></h1>
+	</header>
+	<article class="wrap" id="start" style="display: none;">
+		<section class="min">
+	    	<img src="./src/assets/images/time.png" class="startTime" />
+	        <a href="javascript:;" id="startBtn" class="btn" >设置时间</a>
+	    </section>
+	</article>
+	<article class="wrap" id="animate">
+		<section class="min">
+	    	<section id="time">
+	        		<time>00:00</time>
+	                <p>正在计时</p>
+	        </section>
+	        <article id="timeWarp">
+	        	<header class="timeHead">
+	            	<span>Minute</span>
+	                <span>Second</span>
+	            </header>
+	            <section id="round">
+	                <section class="roundWrap"></section>
+	                <section class="roundWrap"></section>
+	                <section class="roundWrap"></section>
+	                <section class="roundWrap"></section>
+	                <div id="mask"></div>
+	            </section>
+	        </article>
+	         <a href="javascript:;" id="setBtn" class="btn" >开始计时</a>		
+	         <div id="btnGroup">
+	         	<a href="javascript:;" class="btn" id="reset">重置</a>
+	            <a href="javascript:;" class="btn" id="pause">暂停</a>
+	         </div>
+	         <div id="timeEnd">
+	         		<a href="javascript:;" class="btn" id="reset2">设置时间</a>
+	         </div>
+	    </section>
+	</article>
+
+	<script src="./dist/index.bundle.js"></script>
+</body>
+
+</html>
