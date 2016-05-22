@@ -3,8 +3,8 @@
  * @index.js
  */
 
-require('./assets/css/style.css');
-var MScroll = require('./assets/plugins/touch.js');
+require('./styles/App.css');
+var MScroll = require('./plugins/touch.js');
 
 setSize();
 
